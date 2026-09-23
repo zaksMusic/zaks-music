@@ -9,12 +9,12 @@
 <audio id="audio" preload="metadata"></audio>
 <script>
 const songs=[
-{id:2,title:'Beauty and a Beat',artist:'Justin Bieber ft. Nicki Minaj',album:'Believe',cover:'https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=700',audio:'https://pdftourl.net/audio/1790165787973-23958455-b489-49f8-91b1-8618876c31e6.mp3'},
-{id:3,title:'Lagu Upload Saya',artist:'My Music',album:'Uploaded Music',cover:'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700',audio:'https://pdftourl.net/audio/1790165250900-c4bb76e4-8575-4053-bef1-36fc8ffddaf0.mp3'},
-{id:4,title:'Demo Music',artist:'Demo Artist',album:'Demo Album',cover:'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=700',audio:'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'},
-{id:5,title:'Teh Hijau',artist:'Tulus',album:'Teh Hijau',cover:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=700',audio:'https://pdftourl.net/audio/1790169364028-6737d394-ddb5-4300-82f1-2899a90aeae9.mp3'},
-{id:6,title:'As It Was',artist:'Harry Styles',album:"Harry's House",cover:'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=700',audio:'https://pdftourl.net/audio/1790169279446-6f9f6aa7-80f2-46b7-b878-25164928a0a4.mp3'},
-{id:7,title:'On My Way',artist:'Alan Walker',album:'World of Walker',cover:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=700',audio:'https://pdftourl.net/audio/1790169562856-f7bd33ba-900c-450a-a2f8-aa25c1af78e3.mp3'}];
+{id:2,title:'Beauty and a Beat',artist:'Justin Bieber ft. Nicki Minaj',album:'Believe',cover:'https://cdn.phototourl.com/member/2026-09-23-beaf8fca-f90f-4cda-b872-1295286752c0.jpg',audio:'https://pdftourl.net/audio/1790165787973-23958455-b489-49f8-91b1-8618876c31e6.mp3'},
+
+
+{id:5,title:'Teh Hijau',artist:'Tulus',album:'Teh Hijau',cover:'https://cdn.phototourl.com/member/2026-09-23-b2fbdc8b-3439-4f16-adc0-c9bbd61afd96.jpg',audio:'https://pdftourl.net/audio/1790169364028-6737d394-ddb5-4300-82f1-2899a90aeae9.mp3'},
+{id:6,title:'As It Was',artist:'Harry Styles',album:"Harry's House",cover:'https://cdn.phototourl.com/member/2026-09-23-4a588f0b-cb76-452a-b2bc-55df3e2ac9f2.jpg',audio:'https://pdftourl.net/audio/1790169279446-6f9f6aa7-80f2-46b7-b878-25164928a0a4.mp3'},
+{id:7,title:'On My Way',artist:'Alan Walker',album:'World of Walker',cover:'https://cdn.phototourl.com/member/2026-09-23-738e24e6-76f0-4088-8bb5-4e18baaef846.png',audio:'https://pdftourl.net/audio/1790169562856-f7bd33ba-900c-450a-a2f8-aa25c1af78e3.mp3'}];
 const $=id=>document.getElementById(id),audio=$('audio');let current=null,filter='all';
 const favs=()=>JSON.parse(localStorage.zaksFavs||'[]');const recents=()=>JSON.parse(localStorage.zaksRecent||'[]');
 function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function time(s){if(!isFinite(s))return'0:00';return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0')}
